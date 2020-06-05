@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" >
+         <title> Rohit Saha</title>
+  <meta name="description" content="Engineering Student and a tech enthusiast">
+  <meta name="keywords" content="Rohit Saha, NIT Agartala, student,Engineering,web developer, agartala">
+  <meta name="author" content="Rohit Saha">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <style media="screen">
+    input {
+     color: #09ff00;
+ font-size: 23px;
+ outline: 0px;
+     text-shadow: 0px 0px 0px #D60B0B; /* change [input font] by this*/
+font-family: 'VT323', monospace;
+   }
+
+   input[type=text]:focus {
+  width: 250px;
+  border-radius: 0px;
+  border-color: black;
+
+}
+    #nametag{
+background-color: black;
+border-radius: 0px;
+border-color: black;
+
+    }
+  .container{
+    width: 80%;
+    margin: 30px;
+color: #09ff00;
+font-size: 20px;
+font-family: 'VT323', monospace;
+      }
+      .incont {
+
+      }
+      .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.footer p{
+  color: #b6eaff;
+  font-size: 22px;
+
+    font-family: 'VT323', monospace;
+}
+    </style>
+
+  </head>
+
+  <body style="background-color: black;"  onload="typeWriter1()" >
+
+    <div class="container" >
+<br>
+ <font style="font-size:22px;"id="hello" >  </font>
+  <br>
+
+
+
+
+
+
+
+    </div>
+
+    <script>
+
+    var i = 0;
+    var j =0;
+    var txt1 = ["                ",">> Hello world :)                   ", ">> setting up...           " ,    ">> ...  ", ">> waiting          ", ">> ...   ",   ">> crash thud heard :(         " , ">> trying new version           " , "  "," -----------------------------    ",  "  ",">> Rebuilding page  -_-             " ,  ">> ...  "   ,  " >> website fixed!"                   , " >> loading ...                                      "," >> exit          " ] ;
+    var speed = 60;
+
+    function typeWriter1() {
+      if (i < txt1[j].length) {
+        console.log(j);
+        document.getElementById("hello").innerHTML += txt1[j].charAt(i);
+        i++;
+        setTimeout(typeWriter1, speed);
+             }
+             if(i == txt1[j].length ){
+            j++;
+            i=0;
+        document.getElementById("hello").innerHTML += "<br> ";
+             }
+
+            }
+
+
+
+            setTimeout(openUrl, 20000); // Wait 5 seconds
+
+            function openUrl(){
+
+               window.location.replace('https://rohitsaha.netlify.app/home.html');
+
+            }
+
+
+
+     </script>
+
+
+
+
+
+
+
+     <div class="footer">
+      <p id="demo"></p>
+     </div>
+
+
+    <script>
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d;
+    </script>
+
+  </body>
+</html>
