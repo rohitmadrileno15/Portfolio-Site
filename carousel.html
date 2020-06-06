@@ -1,0 +1,102 @@
+ <!DOCTYPE html>
+ <html lang="en" dir="ltr">
+   <head>
+     <meta charset="utf-8">
+     <title> Rohit Saha -Designs</title>
+     <link rel="shortcut icon" type="image/x-icon" href="download.png" />
+       <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+     <style media="screen">
+
+     html, body {
+margin: 0;
+padding: 0;
+}
+
+.pic-ctn {
+width: 100vw;
+height: 200px;
+}
+
+@keyframes display {
+0% {
+  transform: translateX(200px);
+  opacity: 0;
+}
+10% {
+  transform: translateX(0);
+  opacity: 1;
+}
+20% {
+  transform: translateX(0);
+  opacity: 1;
+}
+30% {
+  transform: translateX(-200px);
+  opacity: 0;
+}
+100% {
+  transform: translateX(-200px);
+  opacity: 0;
+}
+}
+
+.pic-ctn {
+position: relative;
+width: 100vw;
+height: 300px;
+margin-top: 5%;
+}
+
+.pic-ctn > img {
+position: absolute;
+top: 0;
+max-width: 500px;
+left: calc(36% - 100px);
+opacity: 0;
+animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+animation-delay: 2s;
+}
+img:nth-child(3) {
+animation-delay: 4s;
+}
+img:nth-child(4) {
+animation-delay: 6s;
+}
+img:nth-child(5) {
+animation-delay: 8s;
+}
+  a:hover{
+
+ transition: 0.3s;
+ transition-timing-function:ease-in;
+    border-bottom: 2px solid blue;
+  }
+
+     </style>
+   </head>
+   <body>
+     <header class="text-gray-700 body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+
+          <span class="ml-3 text-xl"><h4 style="font-weight:bold;"> Designs </h4></span>
+                 <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+          <a class="mr-5 hover:text-gray-900" href="./index.html">About</a>
+          <a class="mr-5 hover:text-gray-900" href="./index_.html">Portfolio</a>
+
+        </nav>
+
+      </div>
+    </header>
+     <div class="pic-ctn">
+         <img src="./images/1.png" alt="" class="pic">
+          <img src="./images/2.png" alt="" class="pic">
+                   <img src="./images/3.png" alt="" class="pic">
+                            <img src="./images/4.png" alt="" class="pic">
+                                     <img src="./images/5.png" alt="" class="pic">
+
+       </div>
+   </body>
+ </html>
