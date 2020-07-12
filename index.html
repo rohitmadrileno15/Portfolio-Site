@@ -24,14 +24,14 @@
 
 .container{
 
-  text-align: center;
-
-  margin-top: 150px;
+    text-align: center;
+    margin-top: 100px;
     margin-bottom:   100px;
+    padding-left: 35%;
+    padding-right: 35%;
 
-font-family: 'Oxygen', sans-serif;
- margin-left: 50px;
- margin-right: 50px;
+    font-family: 'Oxygen', sans-serif;
+  
 
 }
 
@@ -53,9 +53,10 @@ font-family: 'Oxygen', sans-serif;
 .container p{
   color: white;
   font-size: 16px;
-text-align: justify;
+  text-align: justify;
   word-spacing: 3px;
-   line-height: 1.6;
+  line-height: 1.6;
+
 }
 
 .curr{
@@ -63,6 +64,10 @@ text-align: justify;
   text-align: left;
   font-family: 'NTR', sans-serif;
   color: rgba(148, 148, 148, 0.95);
+}
+
+.below-p{
+  margin-top: -10px;
 }
 
 #note {
@@ -75,13 +80,33 @@ border-right: 0px;
   border-color: yellow;
 
 }
+
+@media only screen and (max-width: 900px) {
+
+  .container{
+    padding-left: 20%;
+    padding-right: 20%;
+
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .container{
+    padding-left: 10%;
+    padding-right: 10%;
+
+  }
+
+}
+
     </style>
   </head>
   <body style="  background-color: #201d1d;">
 
 <div class="container">
 <p>
-
    Hi! I'm Rohit, and I dabble in all things tech, math, design, and many other things that sound ambitious and crazy.
  I'm currently an undergraduate at <span class = "college">NIT Agartala</span>, majoring in Electronics and Communications Engineering.
 <br>
@@ -101,14 +126,14 @@ If you're looking to get in touch or just want to send me a meme, then shoot!  <
 </p>
 
  <h2 class="curr"> Current Status</h2>
-<p>
+<p class="below-p">
 Actively looking for internship oppurtunities
 <br>
 Think of looking at my  <a class="atag"href="index_.html">portfolio</a> ?
 </p>
-<br>
+
  <h2 class="curr"> Socials</h2>
-<p>
+<p class="below-p">
   <a class="atag__" href="https://www.linkedin.com/in/rohit-saha-a89710154/">LinkedIn</a>
 
 </p>
